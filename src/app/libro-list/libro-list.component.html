@@ -1,0 +1,28 @@
+
+<div class="container">
+        <div >
+        
+        </div>
+    <table class="table table-primary">
+    <thead>
+        <tr >
+            <th>Id</th>
+            <th>Titulo</th>
+            <th>Precio</th>
+            <th>Popular</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let libro of libros">
+            <td>{{libro.id}}</td>
+            <td>{{libro.title}}</td>
+            <td>{{libro.precio}}</td>
+            <td><span *ngIf="libro.popular===true;"> <b>Popular</b> </span></td>
+            <td>Editar</td>
+            <td>Eliminar</td>
+        </tr>
+    </tbody>
+    </table>
+</div>
